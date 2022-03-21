@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "theory-ml-2", "theory-ml-2\theory-ml-2.pyproj", "{E6D1EAA7-669F-41C4-B17C-00CE43E172D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6D1EAA7-669F-41C4-B17C-00CE43E172D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D1EAA7-669F-41C4-B17C-00CE43E172D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C59DDEB5-C4F9-485F-8760-51D08B211600}
+	EndGlobalSection
+EndGlobal
