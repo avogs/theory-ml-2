@@ -14,16 +14,17 @@ for i in range(1, 51):
 A = np.array(A)
 
 y = A[:, 1]
-p = A[:, 0]
+x = A[:, 0]
 
 w = -1
 
 # Part C:
 ws = []
-learning_rate = 0.001
+learning_rate = 0.0001
 for i in range(100):
     ws.append(w)
-    gradient = np.sum((np.sign(w*p) - y)*p)/n
+    gradient = np.sum((np.sign(w*x) - y)*x)/n
+    # gradient = - np.sum((x*y)/(1 + np.exp(y*x*w)))
     w = w - learning_rate * gradient
 
 ws.append(w)
@@ -36,15 +37,16 @@ plt.show()
 
 # Part D:
 for i in range(0,5):
-    p[i] = p[i]*-1
-    p[-(i + 1)] = p[-(i + 1)]*-1
+    x[i] = x[i]*-1
+    x[-(i + 1)] = x[-(i + 1)]*-1
 
 ws = []
 w = -1
-learning_rate = 0.01
+learning_rate = 0.0001
 for i in range(100):
     ws.append(w)
-    gradient = np.sum((np.sign(w*p) - y)*p)/n
+    gradient = np.sum((np.sign(w*x) - y)*x)/n
+    # gradient = - np.sum((x*y)/(1 + np.exp(np.dot(y, x*w))))
     w = w - learning_rate * gradient
 
 ws.append(w)
